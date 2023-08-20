@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "8ac22747-eef4-4208-862b-a5d3f5fb9f66",
+		"name": "Other Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29059951",
+		"_collection_link": "https://human-resource-module.postman.co/workspace/Team-Workspace~a7db6e09-b713-415e-8022-1adfd9f7ae6c/collection/29059951-8ac22747-eef4-4208-862b-a5d3f5fb9f66?action=share&source=collection_link&creator=29059951"
+	},
+	"item": [
+		{
+			"name": "DTI",
+			"item": [
+				{
+					"name": "Society GetAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUb2tlbkZvclRoZUFwaVdpdGhBdXRoIiwianRpIjoiM2ZkZjI4NWQtNTdmZi00MTg5LWI3ZmMtZWNjZGRkM2JjZDFjIiwiaWF0IjoiMDgvMjAvMjAyMyAyMzo1NjoxOCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiNzg2ZGZmMTYtOGQ4Ni00NjNjLWFlMjktMmNhOTRmODEzOWYyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6InN0cmluZyIsIklkZW50aXR5TnVtYmVyIjoiMTIzIiwiTGFzdEFjY2VzcyI6IjgvMjAvMjAyMyAxMTo1NjoxOCBQTSIsImV4cCI6MTY5MjYzNjk3OCwiaXNzIjoiYXBpV2l0aEF1dGhCYWNrZW5kIiwiYXVkIjoiYXBpV2l0aEF1dGhCYWNrZW5kIn0.c7U2ONWOpiMwbscqPnEWOXVtbiCIgiVK0RPdvDK0-i0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7093/api/Society",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"api",
+								"Society"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Society Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUb2tlbkZvclRoZUFwaVdpdGhBdXRoIiwianRpIjoiMGQxZGIzNWUtNmNhMi00Zjg2LTkxYTQtYTE5ZWYwOGVkZTc2IiwiaWF0IjoiMDgvMjEvMjAyMyAwMTowNDo0MyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiNjNhZjJhNzEtMzNmMC00NzAxLTk5NjEtODg5NjgwNGJlZWI0IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6InN0cmluZyIsIklkZW50aXR5TnVtYmVyIjoiMTIzIiwiTGFzdEFjY2VzcyI6IjgvMjEvMjAyMyAxOjA0OjQzIEFNIiwiZXhwIjoxNjkyNjQxMDgzLCJpc3MiOiJhcGlXaXRoQXV0aEJhY2tlbmQiLCJhdWQiOiJhcGlXaXRoQXV0aEJhY2tlbmQifQ.qD9YBIGkKuV5vApfWfRw7I54s1NVHRc2qVlsvMtJYcA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"FullName\": \"string\",\r\n  \"Address\": \"string\",\r\n  \"Domicile\": \"string\",\r\n  \"IdentityNumber\": \"1111111111\",\r\n  \"IdentityFamilyNumber\": \"1111111111\",\r\n  \"TaxNumber\": \"string\",\r\n  \"BPJSNumber\": \"string\",\r\n  \"Phone\": \"string\",\r\n  \"Email\": \"string\",\r\n  \"SelfiePhoto\": \"string\",\r\n  \"IsActive\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7093/api/Society",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"api",
+								"Society"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Society Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"FullName\": \"string1\",\r\n  \"Address\": \"string\",\r\n  \"Domicile\": \"string\",\r\n  \"IdentityNumber\": \"string\",\r\n  \"IdentityFamilyNumber\": \"string\",\r\n  \"TaxNumber\": \"string\",\r\n  \"BPJSNumber\": \"string\",\r\n  \"Phone\": \"string\",\r\n  \"Email\": \"string\",\r\n  \"SelfiePhoto\": \"string\",\r\n  \"IsActive\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7093/api/Society/3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"api",
+								"Society",
+								"3fa85f64-5717-4562-b3fc-2c963f66afa6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identity\": \"string\",\r\n  \"password\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7093/api/Auth/Login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"api",
+								"Auth",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "File Upload",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUb2tlbkZvclRoZUFwaVdpdGhBdXRoIiwianRpIjoiM2ZkZjI4NWQtNTdmZi00MTg5LWI3ZmMtZWNjZGRkM2JjZDFjIiwiaWF0IjoiMDgvMjAvMjAyMyAyMzo1NjoxOCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiNzg2ZGZmMTYtOGQ4Ni00NjNjLWFlMjktMmNhOTRmODEzOWYyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6InN0cmluZyIsIklkZW50aXR5TnVtYmVyIjoiMTIzIiwiTGFzdEFjY2VzcyI6IjgvMjAvMjAyMyAxMTo1NjoxOCBQTSIsImV4cCI6MTY5MjYzNjk3OCwiaXNzIjoiYXBpV2l0aEF1dGhCYWNrZW5kIiwiYXVkIjoiYXBpV2l0aEF1dGhCYWNrZW5kIn0.c7U2ONWOpiMwbscqPnEWOXVtbiCIgiVK0RPdvDK0-i0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "FileDetails",
+									"contentType": "image/jpeg",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:7093/api/File",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"api",
+								"File"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
