@@ -121,7 +121,7 @@ var LCSKChat = function () {
             $('#chat-box-header').text(options.onlineTitle);
             if (!requestChat) {
                 $('#chat-box').html(
-                    '<div id="chat-box-msg" style="height:265px;overflow:auto;">' +
+                    '<div id="chat-box-msg" style="height:245px;overflow:auto;">' +
                     '<p>Have a question? Let\'s chat!</p><p>Add your question on the field below and press ENTER.</p></div>' +
                     '<div id="chat-box-input" style="height:120px;"><textarea id="chat-box-textinput" style="width:100%;height: 32px;border:1px solid #0354cb;border-radius: 3px;" /></div>' +
                     '<br/>'
